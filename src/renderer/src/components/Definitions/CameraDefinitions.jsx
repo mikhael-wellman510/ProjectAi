@@ -1,0 +1,16 @@
+import React from 'react'
+import road from '../../assets/Road.png'
+import '../../css/Definition.css'
+const CameraDefinitions = () => {
+  // Todo
+  return (
+    <>
+      <div>
+        {/* Gambar Jalan */}
+        <img className="imagesModify" src={road} alt="" />
+      </div>
+    </>
+  )
+}
+
+export default CameraDefinitions

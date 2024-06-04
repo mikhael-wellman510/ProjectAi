@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap');
+/* Gambar =========== */
+/* Ini untuk atur tinggi dan lebar gambar */
+.imagesModify{
+    width: 85vw;
+    height:70vh;
+}
+
+.containerPages{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Sidebar =============== */
+.containerSidebar2{
+    background-color: aqua;
+    width: 15.0vw;
+    height: 93.5vh;
+    margin-left: -30px;
+}
+
+.containerSideBar{
+    display: flex;
+    margin-left: -70px;
+    
+}
+.boxParent{
+    margin-top: 80px;
+    margin-left: -20px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    cursor: pointer;
+}
+
+.boxOptions{
+    width: 120px;
+    height: 60px;
+    rotate: -90deg;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-color: #d9d9d9;
+   
+}
+
+
+
+.boxOptions > p {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+     
+}
+
+/* =====Operators============= */
+
+.containerOperator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-right: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.containerMf{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.headMf{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100;
+      font-size: 13px;
+}
+
+.containerChildMf{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    .lines{
+        border: 1px  dashed rgb(255, 255, 255 ,0.2);
+        height: 30px;
+        margin-left: -10px;
+        
+    }
+
+    .containerMf > .containerChildMf >div{
+        display: flex;
+        gap: 25px;
+        height: 30px;
+        width: 230px;
+        background-color:rgb(131, 14, 209);
+        align-items: center;
+        padding-left: 15px;
+        border-radius: 3px;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-variation-settings:
+          "wdth" 100;
+          font-size: 12px;
+          color: white;
+    }
+
+
+/* Group Operators */
+
+
