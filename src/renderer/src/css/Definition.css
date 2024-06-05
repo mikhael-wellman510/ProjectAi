@@ -1,128 +1,272 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap');
-/* Gambar =========== */
-/* Ini untuk atur tinggi dan lebar gambar */
-.imagesModify{
-    width: 85vw;
-    height:70vh;
-}
-
-.containerPages{
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-/* Sidebar =============== */
-.containerSidebar2{
-    background-color: aqua;
-    width: 15.0vw;
-    height: 93.5vh;
-    margin-left: -30px;
-}
-
-.containerSideBar{
-    display: flex;
-    margin-left: -70px;
-    
-}
-.boxParent{
-    margin-top: 80px;
-    margin-left: -20px;
-    display: flex;
-    flex-direction: column;
-    gap: 65px;
-    cursor: pointer;
-}
-
-.boxOptions{
-    width: 120px;
-    height: 60px;
-    rotate: -90deg;
-    background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 13px;
-    border-top-right-radius: 13px;
-    background-color: #d9d9d9;
-   
-}
-
-
-
-.boxOptions > p {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-     
-}
-
-/* =====Operators============= */
-
-.containerOperator{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-    margin-right: 25px;
-    margin-left: 25px;
-    margin-top: 25px;
-}
-
-.containerMf{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-.headMf{
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-variation-settings:
-      "wdth" 100;
-      font-size: 13px;
-}
-
-.containerChildMf{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;500&display=swap');
+    /* Gambar =========== */
+    /* Ini untuk atur tinggi dan lebar gambar */
+    .imagesModify{
+        width: 85vw;
+        height:65vh;
     }
 
-    .lines{
-        border: 1px  dashed rgb(255, 255, 255 ,0.2);
-        height: 30px;
-        margin-left: -10px;
+    .containerPages{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Sidebar =============== */
+    .containerSidebar2{
+        
+        width: 15.0vw;
+        height: 93.5vh;
+        margin-left: -30px;
+        border-left: 1px solid  rgb(230, 227, 227);
+    }
+
+    .containerSideBar{
+        display: flex;
+        margin-left: -70px;
+      
+        
+    }
+    .boxParent{
+        margin-top: 80px;
+        margin-left: -20px;
+        display: flex;
+        flex-direction: column;
+        gap: 65px;
+        cursor: pointer;
+       
+    }
+
+   
+
+    .boxOptions{
+        width: 120px;
+        height: 60px;
+        rotate: -90deg;
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        background-color: #d9d9d9;
+    
+    }
+
+    .boxOptions:hover{
+        background-color: rgb(240, 235, 229);
+    }
+
+    .boxOptionsSelect{
+        width: 120px;
+        height: 60px;
+        rotate: -90deg;
+        /* background-color: antiquewhite; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top-left-radius: 13px;
+        border-top-right-radius: 13px;
+        background-color: white;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        
+    
+    }
+
+
+
+    .boxOptions > p {
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
         
     }
 
-    .containerMf > .containerChildMf >div{
+    /* =====Operators============= */
+
+    .containerOperator{
         display: flex;
-        gap: 25px;
-        height: 30px;
-        width: 230px;
-        background-color:rgb(131, 14, 209);
+        flex-direction: column;
         align-items: center;
-        padding-left: 15px;
-        border-radius: 3px;
-        font-family: "Open Sans", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 500;
-        font-style: normal;
-        font-variation-settings:
-          "wdth" 100;
-          font-size: 12px;
-          color: white;
+        gap: 30px;
+        margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 25px;
     }
 
+    .containerMf{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .headMf{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        font-size: 13px;
+    }
+    .boxMotionFilter{
+        display: flex;
+        gap: 25px;
+        align-items: center;
+    }
+    .containerChildMf{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        }
 
-/* Group Operators */
+        .lines{
+            border: 1px  dashed rgb(255, 255, 255 ,0.2);
+            height: 30px;
+            margin-left: -10px;
+            
+        }
+
+        .containerMf > .containerChildMf >div{
+            display: flex;
+            gap: 25px;
+            height: 30px;
+            width: 230px;
+            background-color:rgb(131, 14, 209);
+            align-items: center;
+            padding-left: 15px;
+            border-radius: 3px;
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+            font-size: 12px;
+            color: white;
+        }
 
 
+
+    /* ==================  Tools Drag */
+    .td1{
+        display: flex;
+        justify-content: flex-end;
+        background-color: white;
+        height: 50px;
+        align-items: center;
+        gap: 20px;
+        padding-right: 20px;
+        border-bottom: 0.5px solid rgb(230, 227, 227);
+    }
+
+    .tdContainer{
+        background-color: aqua;
+        margin-top: -4px;
+    }
+
+    .td2{
+        display: flex;
+        justify-content: center;
+         height: 260px;
+         background-color:#f3f3f3;
+       
+    }
+
+    .tdPlaceholder{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+    .td3{
+        width: 500px;
+        height: 50px;
+        background-color:#dee7f9;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        cursor: pointer;
+        font-family: "Open Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        font-variation-settings:
+        "wdth" 100;
+        font-size: 12px;
+        color: rgb(102, 80, 80);
+    }
+
+/* Draw Setting Tools */
+
+.dst1{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.dst2{
+    display: flex;
+    flex-direction: column;
+   
+}
+.dst3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dst4{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+}
+
+.boxDst1{
+    border-radius: 3px;
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxDst1:hover{
+    background-color: antiquewhite;
+}
+
+.boxDst2{
+   
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxDst2:hover{
+    background-color: antiquewhite;
+}
+
+.setDst1{
+    display: flex;
+}

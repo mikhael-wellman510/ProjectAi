@@ -1,10 +1,14 @@
 import React from 'react'
+import { DndContext, useDraggable, useDroppable } from '@dnd-kit/core'
 import { IoIosArrowDown } from 'react-icons/io'
 import { IoSpeedometerOutline } from 'react-icons/io5'
 import { BsSpeedometer } from 'react-icons/bs'
 import { GoStopwatch } from 'react-icons/go'
 import { RiTimerLine } from 'react-icons/ri'
 import { IoIosTimer } from 'react-icons/io'
+import Dragables from '../DragDrop/Dragables'
+import Dropables from '../DragDrop/Dropables'
+import { CSS } from '@dnd-kit/utilities'
 const MotionFilters = () => {
   return (
     <>
@@ -14,31 +18,40 @@ const MotionFilters = () => {
           <IoIosArrowDown />
         </div>
         <div className="containerChildMf">
-          <div>
+          <Dragables id="speed" icon={IoSpeedometerOutline} label="Speed" />
+          <Dragables id="acceleration" icon={BsSpeedometer} label="Acceleration" />
+          <Dragables id="stationary-duration" icon={GoStopwatch} label="Stationary Duration" />
+          <Dragables id="time-of-occurrence" icon={RiTimerLine} label="Time of Occurence" />
+          <Dragables id="duration-of-occurrence" icon={IoIosTimer} label="Duration of Occurence" />
+          {/* <div className="boxMotionFilter">
             <IoSpeedometerOutline color="white" size="17px" />
             <div className="lines"></div>
             <p>Speed</p>
           </div>
-          <div>
+
+          <div className="boxMotionFilter">
             <BsSpeedometer color="white" size="17px" />
             <div className="lines"></div>
             <p>Acceleration</p>
           </div>
-          <div>
+
+          <div className="boxMotionFilter">
             <GoStopwatch color="white" size="17px" />
             <div className="lines"></div>
             <p>Stationary Duration</p>
           </div>
-          <div>
+
+          <div className="boxMotionFilter">
             <RiTimerLine color="white" size="17px" />
             <div className="lines"></div>
             <p>Time of Occurence</p>
           </div>
-          <div>
+
+          <div className="boxMotionFilter">
             <IoIosTimer color="white" size="17px" />
             <div className="lines"></div>
             <p>Duration of Occurence</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

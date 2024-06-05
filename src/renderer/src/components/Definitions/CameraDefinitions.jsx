@@ -2,7 +2,6 @@ import React from 'react'
 import road from '../../assets/Road.png'
 import '../../css/Definition.css'
 const CameraDefinitions = () => {
-  // Todo
   return (
     <>
       <div>
