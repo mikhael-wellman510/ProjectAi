@@ -6,6 +6,7 @@ import { BsSpeedometer } from 'react-icons/bs'
 import { GoStopwatch } from 'react-icons/go'
 import { RiTimerLine } from 'react-icons/ri'
 import { IoIosTimer } from 'react-icons/io'
+import Dragables from '../DragDrop/Dragables'
 const GroupOperators = () => {
   return (
     <>
@@ -14,22 +15,30 @@ const GroupOperators = () => {
           <p>Group Operators</p>
           <IoIosArrowDown />
         </div>
-        <div className="containerChildMf">
-          <div style={{ backgroundColor: '#ffa14a' }}>
+        <div className="containerChildMf3">
+          <Dragables
+            warna={'#ffa14a'}
+            id="Level-of-service"
+            icon={IoSpeedometerOutline}
+            label="Level of Service"
+          />
+          <Dragables warna={'#ffa14a'} id="Gap" icon={BsSpeedometer} label="Gap" />
+          <Dragables warna={'#ffa14a'} id="Near-Miss" icon={GoStopwatch} label="Near" />
+          {/* <div style={{ backgroundColor: '#ffa14a' }}>
             <IoSpeedometerOutline color="white" size="17px" />
             <div className="lines"></div>
             <p>Level Of Service</p>
-          </div>
-          <div style={{ backgroundColor: '#ffa14a' }}>
+          </div> */}
+          {/* <div style={{ backgroundColor: '#ffa14a' }}>
             <BsSpeedometer color="white" size="17px" />
             <div className="lines"></div>
             <p>Gap</p>
-          </div>
-          <div style={{ backgroundColor: '#ffa14a' }}>
+          </div> */}
+          {/* <div style={{ backgroundColor: '#ffa14a' }}>
             <GoStopwatch color="white" size="17px" />
             <div className="lines"></div>
-            <p>Near Miss</p>
-          </div>
+            <p>Near Misss</p>
+          </div> */}
         </div>
       </div>
     </>

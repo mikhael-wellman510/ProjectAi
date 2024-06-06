@@ -18,11 +18,31 @@ const MotionFilters = () => {
           <IoIosArrowDown />
         </div>
         <div className="containerChildMf">
-          <Dragables id="speed" icon={IoSpeedometerOutline} label="Speed" />
-          <Dragables id="acceleration" icon={BsSpeedometer} label="Acceleration" />
-          <Dragables id="stationary-duration" icon={GoStopwatch} label="Stationary Duration" />
-          <Dragables id="time-of-occurrence" icon={RiTimerLine} label="Time of Occurence" />
-          <Dragables id="duration-of-occurrence" icon={IoIosTimer} label="Duration of Occurence" />
+          <Dragables warna={'#4a9dff'} id="speed" icon={IoSpeedometerOutline} label="Speed" />
+          <Dragables
+            warna={'#4a9dff'}
+            id="acceleration"
+            icon={BsSpeedometer}
+            label="Acceleration"
+          />
+          <Dragables
+            warna={'#4a9dff'}
+            id="stationary-duration"
+            icon={GoStopwatch}
+            label="Stationary Duration"
+          />
+          <Dragables
+            warna={'#4a9dff'}
+            id="time-of-occurrence"
+            icon={RiTimerLine}
+            label="Time of Occurence"
+          />
+          <Dragables
+            warna={'#4a9dff'}
+            id="duration-of-occurrence"
+            icon={IoIosTimer}
+            label="Duration of Occurence"
+          />
           {/* <div className="boxMotionFilter">
             <IoSpeedometerOutline color="white" size="17px" />
             <div className="lines"></div>

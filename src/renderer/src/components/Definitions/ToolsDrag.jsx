@@ -16,7 +16,7 @@ const ToolsDrag = ({ datas }) => {
       setData(datas)
     }
   }, [datas])
-  console.log('td :', data)
+  console.log(datas)
   return (
     <>
       <div className="tdContainer">
@@ -34,8 +34,10 @@ const ToolsDrag = ({ datas }) => {
               {/* Maping data dari motions Filter */}
               {data &&
                 data.map((val, idx) => (
-                  <div>
-                    <p>{val.id}</p>
+                  <div style={{ backgroundColor: val.warna }} className="toolsDragStyle">
+                    <val.icon />
+                    <div></div>
+                    <p>{val.label}</p>
                   </div>
                 ))}
             </div>
