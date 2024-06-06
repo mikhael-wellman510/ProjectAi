@@ -16,7 +16,7 @@ const ToolsDrag = ({ datas }) => {
       setData(datas)
     }
   }, [datas])
-  console.log(datas)
+  console.log('cek data tools drag : ', data)
   return (
     <>
       <div className="tdContainer">
@@ -25,21 +25,36 @@ const ToolsDrag = ({ datas }) => {
           <RxCross2 size="25px" />
         </div>
 
-        <div className="td2" ref={setNodeRef}>
-          <div className="tdPlaceholder">
-            <div className="td3">
-              <p>Drag Tools Here</p>
-            </div>
-            <div>
-              {/* Maping data dari motions Filter */}
-              {data &&
-                data.map((val, idx) => (
-                  <div style={{ backgroundColor: val.warna }} className="toolsDragStyle">
-                    <val.icon />
-                    <div></div>
-                    <p>{val.label}</p>
-                  </div>
-                ))}
+        <div className="td2">
+          <div style={{ width: '1180px' }} ref={setNodeRef}>
+            <div className="tdPlaceholder">
+              {!data || data.length === 0 ? (
+                <div className="td3">
+                  <p>Drag Tools Here</p>
+                </div>
+              ) : (
+                ''
+              )}
+
+              <div>
+                {/* Maping data dari motions Filter */}
+                {data &&
+                  data.map((val, idx) => (
+                    <div
+                      style={{
+                        position: 'absolute',
+                        left: `${val.relativeX}px`,
+                        top: `${val.relativeY + 770}px`,
+                        backgroundColor: val.warna
+                      }}
+                      className="toolsDragStyle"
+                    >
+                      <val.icon />
+                      <div></div>
+                      <p>{val.label}</p>
+                    </div>
+                  ))}
+              </div>
             </div>
           </div>
         </div>

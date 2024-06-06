@@ -378,7 +378,7 @@
 .toolsDragStyle{
     display: flex;
     gap: 25px;
-    height: 30px;
+    height: 35px;
     width: 230px;
     background-color:#9a4aff;
     align-items: center;

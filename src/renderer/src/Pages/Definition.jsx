@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import DefinitionsComponent from '../components/Definitions/DefinitionsComponent'
 import SidebarDefinitions from '../components/Definitions/SidebarDefinitions'
 import CameraDefinitions from '../components/Definitions/CameraDefinitions'
@@ -8,13 +8,23 @@ import DrawSettingTolls from '../components/Definitions/DrawSettingTolls'
 import { DndContext } from '@dnd-kit/core'
 const Definition = () => {
   const [datas, setDatas] = useState([])
-
+  const dropAreaRef = useRef(null)
   const handleDragEnd = (e) => {
     if (e.over && e.over.id === 'area-drop') {
-      // Masukan data dan sumbu
-      const data = { ...e.active.data.current, ...e.delta }
+      const dropAreaRect = dropAreaRef.current.getBoundingClientRect()
+      const dragItemRect = e.active.rect.current.translated
 
-      setDatas((prevData) => [...prevData, data])
+      const dropX = dragItemRect.left - dropAreaRect.left
+      const dropY = dragItemRect.top - dropAreaRect.top
+
+      const newData = {
+        ...e.active.data.current,
+        relativeX: dropX,
+        relativeY: dropY
+      }
+
+      console.log('ini')
+      setDatas((prevData) => [...prevData, newData])
     }
   }
 
@@ -25,7 +35,9 @@ const Definition = () => {
           <div>
             <DrawSettingTolls />
             <CameraDefinitions />
-            <ToolsDrag datas={datas} />
+            <div ref={dropAreaRef}>
+              <ToolsDrag datas={datas} />
+            </div>
           </div>
           <div>
             <SidebarDefinitions />
